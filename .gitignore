@@ -1,0 +1,33 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+
+# Virtualenv
+venv/
+env/
+ENV/
+.venv/
+
+# Distribuciones y metadatos de compilación
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Archivos de configuración de IDE
+.vscode/
+.idea/
+
+# Archivos de configuración de entorno
+*.env
+.env.*
+.venv/
+
+# Archivos temporales
+*.log
+*.bak
+*.swp
+*.swo
