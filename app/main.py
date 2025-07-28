@@ -24,6 +24,7 @@
 
 # Librerías externas:
 from common import console
+from common import web
 
 
 # ---- MAIN ---- #
@@ -40,10 +41,16 @@ if __name__ == "__main__":
             # Gets the user input.
             user_input:str = console.get_input()
     
+    # If Ctrl+C detected.
     except KeyboardInterrupt:
-        # TODO: Manage program exit.
-        pass
+        # Print line jump.
+        print()
+        # Prints information.
+        console.print_message(msg="Ctrl+C detected. Finishing program ...", type=console.MSG_TYPE.INFO)
 
+    # If error detected.
     except Exception as e:
-        # TODO: Manage exception.
-        pass
+        # Print line jump.
+        print()
+        # Prints information.
+        console.print_message(msg=str(e), type=console.MSG_TYPE.ERROR)
